@@ -15,9 +15,54 @@
 
 # 数学
 
-> $m×n$ 行列、型、$(i,j)$ 成分
+## 80 [線形代数](https://www.amazon.co.jp/dp/441015463X)
 
-行列 $A,B$ の型・成分が同じとき、$A=B$ と定義する。
+$m×n$ 行列、型、$(i,j)$ 成分、$n$ 次正方行列、$n$ 次単位行列 $E_n$
+
+- 行列 $A,B$ の型・成分が等しいとき、$A=B$ と定義する。
+- $k[a_{ij}]:=k[a_{ij}]$
+- 行列 $A,B$ の型が等しいとき、$[a_{ij}]+[b_{ij}]:=[a_{ij}+b_{ij}]$
+
+行列 $[a_{ij}]$ の**列**数と 行列 $[b_{ij}]$ の**行**数が等しいとき、
+
+$$
+    \begin{bmatrix}
+        a_{11} & \cdots & a_{1n} \\
+        \vdots & & \vdots \\
+        a_{l1} & \cdots & a_{ln} \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        b_{11} & \cdots & b_{1n} \\
+        \vdots & & \vdots \\
+        b_{m1} & \cdots & b_{mn} \\
+    \end{bmatrix}
+    :=
+    \begin{bmatrix}
+        \sum_{k=1}^m a_{1k}b_{k1} & \cdots & \sum_{k=1}^m a_{1k}b_{kn} \\
+        \vdots & & \vdots \\
+        \sum_{k=1}^m a_{lk}b_{k1} & \cdots & \sum_{k=1}^m a_{lk}b_{kn} \\
+    \end{bmatrix}
+$$
+
+つまり、
+
+$$
+\sum_{k=1}^m a_{ik}b_{kj} = 
+\begin{bmatrix}
+    a_{i1} & \cdots & a_{im} \\
+\end{bmatrix}
+\begin{bmatrix}
+    b_{1j} \\
+    \vdots \\
+    b_{nj} \\
+\end{bmatrix}
+$$
+
+- 交換法則は一般には成り立たない。
+
+基本行列とは、
+
+- 行基本変形とは、$m×n$ 行列の**左**から $m$ 次基本行列を掛けること。
 
 ## 微積
 
